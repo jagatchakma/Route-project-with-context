@@ -10,6 +10,7 @@ const Header = () => {
             <Link className='link' to="/page3">PAGE 3</Link>
             <Link className='link' to="/page4">PAGE 4</Link>
             <Link className='link' to="/page5">PAGE 5</Link>
+            <Link className='link' to="/grandpa">Grand pa</Link>
         </nav>
     );
 };

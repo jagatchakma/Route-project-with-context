@@ -13,6 +13,7 @@ import Page2 from './pages/Page2/Page2.jsx';
 import Page3 from './pages/Page3/Page3.jsx';
 import Page4 from './pages/Page4/Page4.jsx';
 import Page5 from './pages/Page5/Page5.jsx';
+import GrandPa from './Genaration/GrandPa/GrandPa.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>,
         // loader: ()=> fetch("https://raw.githubusercontent.com/ProgrammingHero1/t-shirt-data/main/tshirt.json")
-        loader: ()=> fetch("data.json")
+        loader: () => fetch("data.json")
       },
       {
         path: '/page2',
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/page5',
         element: <Page5></Page5>
+      },
+      {
+        path: '/grandpa',
+        element: <GrandPa></GrandPa>
       }
     ]
   }

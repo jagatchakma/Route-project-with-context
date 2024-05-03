@@ -6,6 +6,9 @@ const Home = () => {
     return (
         <div>
             <h3>Welcome to Home Page  {tshirts.length}</h3>
+            {
+                tshirts.map(tshirt => console.log(tshirt.name))
+            }
         </div>
     );
 };

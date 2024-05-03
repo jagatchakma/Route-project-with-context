@@ -22,7 +22,8 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch('const dataLink = "https://raw.githubusercontent.com/ProgrammingHero1/t-shirt-data/main/tshirt.json";')
+        // loader: ()=> fetch("https://raw.githubusercontent.com/ProgrammingHero1/t-shirt-data/main/tshirt.json")
+        loader: ()=> fetch("data.json")
       },
       {
         path: '/page2',
